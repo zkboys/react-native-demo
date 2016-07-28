@@ -17,7 +17,10 @@ $ react-native run-android
 ```
 真机摇一摇可以打开`开发者菜单`，虚拟机`ctrl+m`可以打开`开发者菜单`，可以reload，或者开启远程调试，热刷新，热重装等功能。
 
+## 注意
+
+- 在虚拟机中开启远程调试，app非常卡
+- 如果开了win7虚拟机，再使用android studio打开android虚拟机会报错。同样，打开了android虚拟机，再开win7虚拟机也报错
 
 ## 问题
 - react-native-code-push 这个模块是干嘛的？
-- 在虚拟机中开启远程调试，app非常卡
