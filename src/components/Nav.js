@@ -9,7 +9,7 @@ class Nav extends Component {
 	_renderNavContent() {
 		let navs = this.props.navs || {};
 
-		return ['Left', 'Center', 'Right'].map((position)=> {
+		return ['Left', 'Center', 'Right'].map((position, index)=> {
 			let nav = navs[position];
 			if (nav) {
 				return (
@@ -26,7 +26,7 @@ class Nav extends Component {
 				)
 			}
 			return (
-				<View style={[styles.textWrapper, styles['textWrapper'+position]]}>
+				<View key={{index}} style={[styles.textWrapper, styles['textWrapper'+position]]}>
 					<Text key={position} style={[styles.navItem,styles['nav'+position]]}/>
 				</View>
 			)
